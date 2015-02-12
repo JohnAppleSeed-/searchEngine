@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="styles/stylesearch.css"/>
+
+<div>
+  <label id="searchLabel">search:
+    <input ng-keyup="doThing(sm)" ng-model="sm" ng-style="{'background-color': noDat}"/>
+  </label>
+  <ul>
+    {{resultNum + ' results found'}} 
+    <li class="result" ng-repeat="i in results">
+    {{i.city}}
+    {{i.loc}}
+    {{i.pop}}
+    {{i.state}}
+    {{i.created}}
+    </li>
+  </ul>
+</div>

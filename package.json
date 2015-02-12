@@ -1,0 +1,22 @@
+{
+  "name": "search",
+  "private": "true",
+  "version": "0.0.0",
+  "description": "search",
+  "repository": "",
+  "license": "",
+  "devDependencies": {
+    "bower": "latest",
+    "mongoose": "latest",
+    "connect-multiparty": "latest",
+    "connect": "latest",
+    "body-parser": "latest",
+    "socket.io": "latest",
+    "redis": "latest",
+    "colors":"latest",
+    "express": "latest"
+  },
+  "scripts": {
+    "postinstall": "bower install"
+  }
+}

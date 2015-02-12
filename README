@@ -1,0 +1,12 @@
+This is a "search engine" built with:
+  iojs/node + redis + mongodb + express + socket.io
+
+This is for learning purposes only.
+
+>run build script to add information to redis and mongodb.
+>run
+    $ iojs server.js
+  or
+    $ node server.js
+
+And navigate to the URL displayed (default: localhost:4004) to test.
