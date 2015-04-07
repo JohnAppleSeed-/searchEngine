@@ -6,15 +6,18 @@ This is for learning purposes only.
 ###Install
 
 clone the git repo and cd into the newly created directory:
-
-`$ git clone https://github.com/JohnAppleSeed-/searchEngine.git`
-`$ cd searchEngine`
-
+```
+$ git clone https://github.com/JohnAppleSeed-/searchEngine.git
+$ cd searchEngine
+```
 Run comamnds to install dependencies and to add information to redis and mongodb:
-`$ npm install`
-`$ node adtodb.js`
-
+```
+$ npm install
+$ node adtodb.js
+```
 Run:
-`$ node server.js`
+```
+$ node server.js
+```
 
 And navigate to the URL displayed (default: localhost:4004) to test.
