@@ -2,8 +2,6 @@ var http             = require('http');
 var express          = require('express');
 var app              = express();
 var server           = http.createServer(app);
-var multipart        = require('connect-multiparty');
-var bodyParser       = require('body-parser');
 var mongoose         = require('mongoose');
 var colors           = require('colors');
 var redis            = require('redis');
@@ -22,11 +20,6 @@ var serverConf       = {
   }
 };
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(multipart({
-  uploadDir: serverConf.tmp
-})); 
 
 app.use('/', express.static(__dirname + '/app'));
 app.use('/bower_components', 

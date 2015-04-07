@@ -5,7 +5,6 @@ myAppControllers.controller('HomeCtrl', ['$scope', '$http',
     var socket     = io.connect();
     $scope.doThing = doThing;
     $scope.noDat   = 'white';
-    $scope.results = [];
 
     function doThing(keypress) {
      socket.emit('kp', keypress);

@@ -3,10 +3,10 @@ This is a "search engine" built with:
 
 This is for learning purposes only.
 
->run build script to add information to redis and mongodb.
+>run comamnds to install dependencies and to add information to redis and mongodb.
+    $ npm install
+    $ node adtodb.js
 >run
-    $ iojs server.js
-  or
     $ node server.js
 
 And navigate to the URL displayed (default: localhost:4004) to test.
