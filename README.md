@@ -13,7 +13,7 @@ $ cd searchEngine
 Run comamnds to install dependencies and to add information to redis and mongodb:
 ```
 $ npm install
-$ node adtodb.js
+$ node addtodb.js
 ```
 Run:
 ```
