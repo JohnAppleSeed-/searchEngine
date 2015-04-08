@@ -9,7 +9,7 @@ This is for learning purposes only. It's very simple and "bare bones" and can pr
 
 Must have MongoDB and Redis installed and running. Only tested with MongoDB V2.4.13 and Redis V2.8.19. See `bower.json` and `package.json` for info on pacjages that will be installed by `npm` and `bower`.
 
-###Install
+###Install:
 
 Clone the git repo and `cd` into the newly created directory:
 ```
