@@ -1,13 +1,13 @@
 This is a "search engine" built with:
   iojs/node + redis + mongodb + express + socket.io
 
-This is for learning purposes only.
+This is for learning purposes only. It's very simple and "bare bones" and can probably be improved. 
 
 ![instant search](http://i.imgur.com/PGwqbC7.gif)
 
 ###Install
 
-clone the git repo and cd into the newly created directory:
+Clone the git repo and cd into the newly created directory:
 ```
 $ git clone https://github.com/JohnAppleSeed-/searchEngine.git
 $ cd searchEngine
