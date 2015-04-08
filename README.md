@@ -12,7 +12,7 @@ Clone the git repo and cd into the newly created directory:
 $ git clone https://github.com/JohnAppleSeed-/searchEngine.git
 $ cd searchEngine
 ```
-Run comamnds to install dependencies and to add information to redis and mongodb:
+Run commands to install dependencies and to add information to redis and mongodb:
 ```
 $ npm install
 $ node addtodb.js
