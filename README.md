@@ -3,6 +3,8 @@ This is a "search engine" built with:
 
 This is for learning purposes only.
 
+![instant search](http://i.imgur.com/PGwqbC7.gif)
+
 ###Install
 
 clone the git repo and cd into the newly created directory:
