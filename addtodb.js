@@ -37,7 +37,8 @@ var addArr = [];
 function getCol() {
   fs.readFile('zips.json', 'UTF-8', function(err, data) {
     var stuff = (data.split('\n'));
-    for (var i = 0, j = stuff.length-1; i < j; i++) {
+    for (var i = 0, j = stuff.length-27000; i < j; i++) {
+    console.log("creating mongo documents... " + i + " of " + j )
       city  = JSON.parse(stuff[i]).city;
       loc   = JSON.parse(stuff[i]).loc;
       pop   = JSON.parse(stuff[i]).pop;
@@ -49,9 +50,15 @@ function getCol() {
         pop  : pop,
         state: state
       });
-
+      if (i === j-1) {
+        console.log("Saving documents and adding the lookup IDs to redis... this might take a minute...")
+      }
       newsearch.save(function(err, newStuff) {
-        addArr = [newStuff.city, newStuff.pop, newStuff.state];
+        j = j-1;
+        if (j === 0) {
+          console.log("DONE!")
+          process.exit(0)
+        }
         if (err) {
           console.log(err);
         } else {
@@ -62,7 +69,7 @@ function getCol() {
               console.log(err);
             }
           });
-          client.sadd(addArr[q], newStuff._id, function(err) {
+          client.sadd(addArr[q], newStuff._id.toString(), function(err) {
             if (err) console.log(err);
           });       
           };
