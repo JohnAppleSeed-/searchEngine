@@ -37,7 +37,7 @@ var addArr = [];
 function getCol() {
   fs.readFile('zips.json', 'UTF-8', function(err, data) {
     var stuff = (data.split('\n'));
-    for (var i = 0, j = stuff.length-27000; i < j; i++) {
+    for (var i = 0, j = stuff.length-1; i < j; i++) {
     console.log("creating mongo documents... " + i + " of " + j )
       city  = JSON.parse(stuff[i]).city;
       loc   = JSON.parse(stuff[i]).loc;
