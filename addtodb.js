@@ -54,6 +54,7 @@ function getCol() {
         console.log("Saving documents and adding the lookup IDs to redis... this might take a minute...")
       }
       newsearch.save(function(err, newStuff) {
+        addArr = [newStuff.city, newStuff.pop, newStuff.state];
         j = j-1;
         if (j === 0) {
           console.log("DONE!")
